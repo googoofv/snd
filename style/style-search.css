@@ -1,0 +1,335 @@
+html {
+  font-family: "ANTTEM Regular";
+  display: grid;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.main-visual {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 19.23vh auto auto auto auto auto auto auto auto auto auto auto auto 5vh;
+  gap: 0;
+
+}
+
+@media (orientation: landscape) {
+  
+  .result-title{
+    display: flex; 
+    font-size: clamp(14px, 6vh, 40px);
+    text-align: left;
+    letter-spacing: 0.35vw;
+    position: fixed;
+    top: 0px;
+    left: 0.5vw;
+  }
+  
+  .result-info{
+    display: flex; 
+    font-size: clamp(5px, 3.5vh, 15px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    grid-column: 2 / 7;
+    grid-row: 2 / 3;
+    margin: 0 0 0 0;
+    font-weight: bolder;
+  }
+  
+  .result-description{
+    display: flex; 
+    font-size: clamp(5px, 3vh, 12px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    grid-column: 2 / 7;
+    grid-row: 3 / 4;
+    margin: 0 0 6vh 0;
+  }
+  
+  .main-page{
+    display: flex; 
+    font-size: clamp(12px, 3vh, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 14vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .main-page:link{
+    color:black;
+  }
+  .main-page:visited{
+    color:black;
+  }
+  .main-page:hover{
+    color:black;
+    text-decoration: underline;
+  }
+  
+  .work-page{
+    display: flex; 
+    font-size: clamp(12px, 3vh, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 10vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .work-page:link{
+    color:black;
+  }
+  .work-page:visited{
+    color:black;
+  }
+  .work-page:hover{
+    color:black;
+    text-decoration: underline;
+  }
+  
+  .search-box{
+    display: flex; 
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+    height: 19.23vh;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 1600;
+  }
+  .search-text-box{
+    font-size: clamp(5px, 3vh, 20px);
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: "ANTTEM Regular";
+  }
+  .search-text-box::placeholder{
+    font-family: "ANTTEM Regular";
+    text-align: justify;
+    width: 100%;
+    color:rgb(50, 50, 50);
+  }
+  input[type="text"] {
+    color:black;
+  }
+  .no-result{
+    display: flex; 
+    font-size: clamp(14px, 6vh, 20px);
+    grid-column: 2 / 7;
+  }
+
+  .line {
+    border-top: 1px solid black; 
+    margin: 6vh 0 1vh 0; 
+    grid-column: 2 / 7;
+  }
+  
+  .end-text{
+    font-family: "ANTTEM Regular";
+    color: black; 
+    font-size: clamp(4px, 2.2vh, 12px);
+    grid-column: 2 / 7;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
+@media (orientation: portrait) {
+  
+  .result-title{
+    display: flex; 
+    font-size: clamp(14px, 6vw, 40px);
+    text-align: left;
+    letter-spacing: 0.35vw;
+    position: fixed;
+    top: 0px;
+    left: 0.5vw;
+  }
+  
+  .result-info{
+    display: flex; 
+    font-size: clamp(5px, 3.5vw, 15px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    grid-column: 2 / 7;
+    grid-row: 2 / 3;
+    margin: 0 0 0 0;
+    font-weight: bolder;
+  }
+  
+  .result-description{
+    display: flex; 
+    font-size: clamp(5px, 3vw, 12px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    grid-column: 2 / 7;
+    grid-row: 3 / 4;
+    margin: 0 0 6vh 0;
+  }
+  .main-page{
+    display: flex; 
+    font-size: clamp(12px, 3vw, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 7.5vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .main-page:link{
+    color:black;
+  }
+  .main-page:visited{
+    color:black;
+  }
+  .main-page:hover{
+    color:black;
+    text-decoration: underline;
+  }
+  
+  .work-page{
+    display: flex; 
+    font-size: clamp(12px, 3vw, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 5.5vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .work-page:link{
+    color:black;
+  }
+  .work-page:visited{
+    color:black;
+  }
+  .work-page:hover{
+    color:black;
+    text-decoration: underline;
+  }
+  
+  .search-box{
+    display: flex; 
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+    height: 19.23vh;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 1600;
+  }
+  .search-text-box{
+    font-size: clamp(5px, 3vw, 20px);
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: "ANTTEM Regular";
+  }
+  .search-text-box::placeholder{
+    font-family: "ANTTEM Regular";
+    text-align: justify;
+    width: 100%;
+    color:black;
+  }
+  input[type="text"] {
+    color:black;
+  }
+  .no-result{
+    display: flex; 
+    font-size: clamp(14px, 6vw, 20px);
+    grid-column: 2 / 7;
+  }
+
+  .line {
+    border-top: 1px solid black; 
+    margin: 6vh 0 1vh 0; 
+    grid-column: 2 / 7;
+  }
+  
+  .end-text{
+    font-family: "ANTTEM Regular";
+    color: black; 
+    font-size: clamp(4px, 2.2vw, 12px);
+    grid-column: 2 / 7;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+}
+
+.key-image{
+  grid-column: 2 / 7;
+  grid-row: 4 / 5;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.image-1{
+  grid-column: 2 / 7;
+  grid-row: 5 / 6;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+.image-2{
+  grid-column: 2 / 7;
+  grid-row: 6 / 7;
+  width: 100%;
+  height: auto;
+}
+.image-3{
+  grid-column: 2 / 7;
+  grid-row: 7 / 8;
+  width: 100%;
+  height: auto;
+}
+.image-4{
+  grid-column: 2 / 7;
+  grid-row: 8 / 9;
+  width: 100%;
+  height: auto;
+}
+.image-5{
+  grid-column: 2 / 7;
+  grid-row: 9 / 10;
+  width: 100%;
+  height: auto;
+}
+.image-6{
+  grid-column: 2 / 7;
+  grid-row: 10 / 11;
+  width: 100%;
+  height: auto;
+}
+.image-7{
+  grid-column: 2 / 7;
+  grid-row: 11 / 12;
+  width: 100%;
+  height: auto;
+}
+.image-8{
+  grid-column: 2 / 7;
+  grid-row: 12 / 13;
+  width: 100%;
+  height: auto;
+}
+.image-9{
+  grid-column: 2 / 7;
+  grid-row: 13 / 14;
+  width: 100%;
+  height: auto;
+}
+

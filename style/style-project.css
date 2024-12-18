@@ -1,0 +1,214 @@
+html {
+  font-family: "ANTTEM Regular";
+  color:white;
+  background-color: rgb(100, 100, 100);
+  display: grid;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.main-visual {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 19.23vh auto 19.23vh;
+  gap: 0;
+}
+
+@media (orientation: landscape) {
+  .page-title{
+    display: flex; 
+    font-weight: normal;
+    font-size: clamp(14px, 6vh, 40px);
+    text-align: left;
+    letter-spacing: 0.35vw;
+    position: fixed;
+    top: 0vh;
+    left: 0.5vw;
+  }
+
+  .main-page{
+    display: flex; 
+    font-size: clamp(12px, 3vh, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 10vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .main-page:link{
+    color:white;
+  }
+  .main-page:visited{
+    color:white;
+  }
+  .main-page:hover{
+    text-decoration: underline;
+  }
+
+  .table-style{
+    border: 1;
+    grid-column: 2 / 7;
+  }
+  .result-title{
+    display: flex; 
+    font-size: clamp(10px, 3.5vh, 25px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .result-title:link{
+    color:white;
+  }
+  .result-title:visited{
+    color:white;
+  }
+  .result-title:hover{
+    text-decoration: underline;
+  }
+  .result-info{
+    display: flex; 
+    font-size: clamp(5px, 2.5vh, 12px);
+    text-align: justify;
+    letter-spacing: 0.1vw;
+  }
+
+  .search-box{
+    display: flex; 
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+    height: 19.23vh;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 1600;
+  }
+  .search-text-box{
+    background-color: rgb(100, 100, 100);
+    font-size: clamp(5px, 3vh, 20px);
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: "ANTTEM Regular";
+  }
+  .search-text-box::placeholder{
+    font-family: "ANTTEM Regular";
+    text-align: justify;
+    width: 100%;
+    color: rgb(200, 200, 200);
+  }
+  input[type="text"] {
+    color: white;
+  }
+
+  .no-result{
+    display: flex; 
+    font-size: clamp(14px, 6vw, 20px);
+    grid-column: 2 / 7;
+  }
+
+}
+
+@media (orientation: portrait) {
+  .page-title{
+    display: flex; 
+    font-weight: normal;
+    font-size: clamp(14px, 6vw, 40px);
+    text-align: left;
+    letter-spacing: 0.35vw;
+    position: fixed;
+    top: 0vh;
+    left: 0.5vw;
+  }
+
+  .main-page{
+    display: flex; 
+    font-size: clamp(12px, 3vw, 20px);
+    text-align: left;
+    text-decoration: none;
+    position: fixed;
+    letter-spacing: 0.25vw;
+    top: 5.5vh;
+    left: 0.5vw;
+    text-decoration: none;
+  }
+  .main-page:link{
+    color:white;
+  }
+  .main-page:visited{
+    color:white;
+  }
+  .main-page:hover{
+    text-decoration: underline;
+  }
+
+  .table-style{
+    border: 1;
+    grid-column: 2 / 7;
+  }
+  .result-title{
+    display: flex; 
+    font-size: clamp(10px, 3.5vw, 25px);
+    text-align: justify;
+    letter-spacing: 0.2vw;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .result-title:link{
+    color:white;
+  }
+  .result-title:visited{
+    color:white;
+  }
+  .result-title:hover{
+    text-decoration: underline;
+  }
+  .result-info{
+    display: flex; 
+    font-size: clamp(5px, 2.5vw, 12px);
+    text-align: justify;
+    letter-spacing: 0.1vw;
+  }
+
+  .search-box{
+    display: flex; 
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+    height: 19.23vh;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 1600;
+  }
+  .search-text-box{
+    background-color: rgb(100, 100, 100);
+    font-size: clamp(5px, 3vw, 20px);
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: "ANTTEM Regular";
+  }
+  .search-text-box::placeholder{
+    font-family: "ANTTEM Regular";
+    text-align: justify;
+    width: 100%;
+    color: rgb(200, 200, 200);
+  }
+  input[type="text"] {
+    color: white;
+  }
+
+  .no-result{
+    display: flex; 
+    font-size: clamp(14px, 6vw, 20px);
+    grid-column: 2 / 7;
+  }
+  
+}
+
